@@ -1,33 +1,11 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
+  "name": "big-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
+    "lint": "eslint --config eslint.config.mjs --fix --quiet ./packages",
     "prepare": "husky && husky install"
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": [
-    "@typescript-eslint",
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": "error",
-    "no-case-declarations": "off",
-    "no-constant-condition": "off",
-    "@typescript-eslint/ban-ts-comment": "off"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
